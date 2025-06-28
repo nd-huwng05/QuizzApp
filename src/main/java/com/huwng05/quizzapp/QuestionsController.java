@@ -1,6 +1,7 @@
 package com.huwng05.quizzapp;
 
 import com.huwng05.pojo.Category;
+import com.huwng05.pojo.Level;
 import com.huwng05.services.CategoryServices;
 import com.huwng05.utils.JdbcConnector;
 import javafx.collections.FXCollections;
@@ -15,8 +16,8 @@ import java.util.List;
 import java.util.ResourceBundle;
 
 public class QuestionsController implements Initializable {
-    @FXML
-    private ComboBox<Category> cbCates;
+    @FXML private ComboBox<Category> cbCates;
+    @FXML private ComboBox<Level> cbLevel;
     private static final CategoryServices cateServices = new CategoryServices();
 
     @Override

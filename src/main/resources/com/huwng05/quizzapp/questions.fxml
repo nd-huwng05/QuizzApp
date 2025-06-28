@@ -9,7 +9,6 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
-
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="435.0" prefWidth="439.0" styleClass="Main" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.huwng05.quizzapp.QuestionsController">
    <children>
       <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Subject" text="QUẢN LÝ CÂU HỎI" />
@@ -17,7 +16,7 @@
       <HBox prefHeight="39.0" prefWidth="451.0" styleClass="Main">
          <children>
             <ComboBox fx:id="cbCates" prefWidth="150.0" promptText="Danh mục" styleClass="Input" />
-            <ComboBox prefWidth="150.0" promptText="Mức độ" styleClass="Input" />
+            <ComboBox fx:id="cbLevel" prefWidth="150.0" promptText="Mức độ" styleClass="Input" />
          </children>
       </HBox>
       <VBox prefHeight="102.0" prefWidth="451.0">
