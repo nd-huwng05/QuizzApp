@@ -12,7 +12,7 @@ import java.util.List;
 
 public class CategoryServices {
     public List<Category> getCates() throws SQLException {
-        Connection cnn = JdbcConnector.getInstance().connection();
+        Connection cnn = JdbcConnector.getInstance().connect();
         Statement st = cnn.createStatement();
         ResultSet rs = st.executeQuery("select * from category");
         List<Category> cates = new ArrayList<>();

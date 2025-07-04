@@ -23,7 +23,7 @@ public class JdbcConnector {
         }
         return instance;
     }
-    public  Connection connection() throws SQLException {
+    public  Connection connect() throws SQLException {
         return this.cnn;
     }
 
